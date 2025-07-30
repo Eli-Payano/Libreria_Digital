@@ -1,0 +1,201 @@
+/* === RESET === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #e6ddff, #5139b5);
+  font-family: 'Montserrat', sans-serif;
+  color: #0e0a1e;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  letter-spacing: 0.02em;
+}
+
+/* === TÍTULOS === */
+h1, h2, h3 {
+  color: #311a7e;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 3px rgba(0,0,0,0.1);
+}
+
+/* === NAVBAR === */
+.navbar {
+  background: rgb(57 43 91);
+  box-shadow: 0 6px 15px rgba(2 2 2 / 66%);
+  border-bottom: 3px solid #a69cd0;
+  backdrop-filter: saturate(180%) blur(8px);
+}
+
+.navbar-brand {
+  font-weight: 900;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #e1d9ff !important;
+  letter-spacing: 1.3px;
+}
+
+.navbar-nav .nav-link {
+  color: #d9d1ffcc !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  padding: 8px 18px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #fff !important;
+  background-color: rgba(125, 102, 210, 0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+}
+
+/* === FORMULARIO === */
+form {
+  max-width: 720px;
+  margin: 2rem auto 4rem auto;
+  background-color: rgba(255, 255, 255, 0.96);
+  padding: 40px 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 40px rgba(121, 99, 205, 0.3);
+  transition: transform 0.35s ease;
+}
+
+form:hover {
+  transform: translateY(-6px);
+}
+
+.form-label {
+  font-weight: 700;
+  color: #5c47a1;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 18px 24px;
+  margin-bottom: 22px;
+  border: 2px solid #c3b8ff;
+  border-radius: 20px;
+  font-size: 1.05rem;
+  background-color: #f7f5ff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  color: #4b3c8d;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #7e69d9;
+  outline: none;
+  box-shadow: 0 0 14px rgba(126, 105, 217, 0.6);
+}
+
+/* === BOTÓN MORADO UNIFORME === */
+button.btn-primary {
+  background: linear-gradient(135deg, #7e69d9, #9c8bff);
+  color: #fff;
+  font-weight: 700;
+  padding: 16px 40px;
+  font-size: 1.15rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 7px 18px rgba(156, 139, 255, 0.4);
+  letter-spacing: 0.05em;
+}
+
+button.btn-primary:hover {
+  background: linear-gradient(135deg, #9c8bff, #7e69d9);
+  box-shadow: 0 16px 40px rgba(156, 139, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* === FOOTER === */
+footer {
+  background: rgba(126, 105, 217, 0.85);
+  color: #e1d9ff;
+  text-align: center;
+  padding: 22px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 -3px 15px rgba(126, 105, 217, 0.6);
+  backdrop-filter: saturate(180%) blur(12px);
+  letter-spacing: 0.05em;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+  form {
+    padding: 30px 20px;
+    margin: 1.5rem 15px 5rem 15px;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  button.btn-primary {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+
+/* Botones del navbar con morado y gradiente */
+.navbar-dark .navbar-nav .nav-link {
+  background: linear-gradient(135deg, #7e69d9, #9c8bff);
+  color: #ffffff !important;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover */
+.navbar-dark .navbar-nav .nav-link:hover {
+  background: linear-gradient(135deg, #9c8bff, #7e69d9);
+  color: #fff !important;
+  box-shadow: 0 6px 18px rgba(156, 139, 255, 0.6);
+  transform: scale(1.05);
+}
+
+/* Enlace activo */
+.navbar-dark .navbar-nav .nav-link.active {
+  background: #5d4bb7 !important;
+  box-shadow: 0 4px 12px rgba(93, 75, 183, 0.5);
+}
+
+.btn-nav {
+  background: linear-gradient(135deg, #8c5eff, #ae8bff);
+  color: #ffffff !important;
+  border-radius: 25px;
+  padding: 10px 22px;
+  margin: 0 6px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border: none;
+}
+
+.btn-nav:hover {
+  background: linear-gradient(135deg, #ae8bff, #8c5eff);
+  box-shadow: 0 6px 18px rgba(156, 139, 255, 0.6);
+  transform: scale(1.05);
+}
+
+
+}
